@@ -1,0 +1,313 @@
+
+/* LAYOUT */
+body{
+    font-family: 'Raleway Light';
+}
+/* paddings and margins go into body --> question: when do you add these and where do you add these? Are they on seperate elements or classes? */
+
+/* FIGURE OUT WHAT THESE ARE FOR */
+
+.class{
+    position: relative;
+    left: 300px
+}
+
+/* TYPOGRAPHY */
+@font-face {
+    font-family: 'Raleway Light';
+    src: url('fonts/Raleway-Light.eot');
+    src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Light.woff2') format('woff2'),
+        url('fonts/Raleway-Light.woff') format('woff'),
+        url('fonts/Raleway-Light.ttf') format('truetype'),
+        url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url('fonts/Raleway-Medium.eot');
+    src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Medium.woff2') format('woff2'),
+        url('fonts/Raleway-Medium.woff') format('woff'),
+        url('fonts/Raleway-Medium.ttf') format('truetype'),
+        url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway Italic';
+    src: url('fonts/Raleway-LightItalic.eot');
+    src: url('fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-LightItalic.woff2') format('woff2'),
+        url('fonts/Raleway-LightItalic.woff') format('woff'),
+        url('fonts/Raleway-LightItalic.ttf') format('truetype'),
+        url('fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display Bold';
+    src: url('fonts/PlayfairDisplay-Bold.eot');
+    src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display Italic';
+    src: url('fonts/PlayfairDisplay-Italic.eot');
+    src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display Regular';
+    src: url('fonts/PlayfairDisplay-Regular.eot');
+    src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+    text-align: center;
+    font-size: 16px
+
+}
+
+h1{
+    font-family:'Playfair Display Regular'; 
+    text-align: center;
+    font-size: 40px
+}
+
+h2{
+    font-family:'Playfair Display Regular'; 
+    text-align: center;
+    font-size: 40px;
+}
+
+h3{
+    font-family:'Playfair Display Regular'; 
+    text-align: center;
+    color: #e2574c;
+}
+
+em{
+    font-family: 'Playfair Display Italic';
+}
+
+strong{
+    font-family: 'Playfair Display Bold';
+}
+
+/* would lists be added in typography?  */
+i{
+    font-family: 'Raleway Light';
+    display: inline-block;
+    width: 200px;
+    color: #fff;
+}
+
+ul{
+    font-family: 'Raleway Light';
+}
+
+a{
+    color:  #e2574c;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.container{
+    max-width: 1250px;
+    padding: 0 2%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    align-self: flex-start; 
+    order: 1;
+    flex: 1 0 50%; 
+}
+
+.cart{
+    align-self: flex-end; 
+    order: 3;
+    flex: 0 1 50%;
+}
+
+.main-navigation {
+    align-self: center;
+    order: 2;
+    flex:  1 0 50%; 
+}
+
+.main-navigation li {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.main-navigation {
+    color: #e2574c;
+}
+
+.main-navigation:hover {
+    color: #b64036;
+}
+
+/* BANNER */
+.collection{
+    text-align:center;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.season{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+.banner{
+    background: url("images/banner-girl.png") no-repeat center 85px, 
+    url("images/flower-bkgd.jpg") repeat-x; 
+    height: 700px;
+}
+
+.banner-text{
+    text-align: center;
+    margin: 50px;
+}
+
+
+.featured{
+    display: inline-block;
+    width: 300px;
+}
+
+/* HAND-CRAFTED STYLES */ 
+
+/* really need help with this section**** and flex box */
+.product-categories { 
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.category-rectangle {
+    position: relative;
+    float: none;
+    box-sizing: border-box;
+    display: block;
+    line-height: 32px; 
+    z-index: auto;
+    flex-basis: 50%;
+    flex: 2 0 100%; 
+    max-width: 100%; 
+    height: 200px;
+}
+
+.category-square {
+    position: relative;
+    float: none;
+    box-sizing: border-box;
+    display: block;
+    line-height: 32px; 
+    z-index: auto;
+    flex-basis: 25%;
+    flex: 1 0 50%; 
+    max-width: 50%; 
+    height: 100px;
+}
+
+.category-rectangle.mens {
+    background: url("images/mens-category.jpg") no-repeat 50%;
+    background-size: cover;
+}
+
+.category-square.trends {
+    background: url("images/trends-catergory.jpg") no-repeat;
+    background-size: cover;
+}
+
+.category-square.glasses {
+    background: url("images/glasses-catergory.jpg") no-repeat;
+    background-size: cover;
+}
+
+.category-square.sale {
+    background: url("images/sale-catergory.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.category-square.bags {
+    background: url("images/bag-catergory.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.category-rectangle.womens {
+    background: url("images/womens-category.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+/* NEWSLETTER */
+.newsletter{
+    background: url("images/wave-bkgd.jpg") bottom no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%; 
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: right;
+    align-content: flex-start;
+}
+footer ul{
+    width: 20%;
+}
+
+
+footer a {
+    color: #fff;
+    text-decoration: white;
+}
+
+.site-footer{
+    background-color: grey;
+    color: white;
+}
+
