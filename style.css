@@ -140,7 +140,6 @@ a{
     max-width: 1250px;
     padding: 0 2%;
     margin: 0 auto;
-    width: 100%;
 }
 
 .site-header {
@@ -219,30 +218,25 @@ a{
     flex-wrap: wrap;
     text-align: center;
 }
+
+.category-name {
+    position: absolute;
+    text-align: center;
+    color: white;
+
+}
 .category-rectangle {
     position: relative;
-    float: none;
-    box-sizing: border-box;
-    display: block;
-    line-height: 32px; 
-    z-index: auto;
+    flex: 2 0 50%; 
     flex-basis: 50%;
-    flex: 2 0 100%; 
-    max-width: 100%; 
     height: 200px;
 }
 
 .category-square {
     position: relative;
-    float: none;
-    box-sizing: border-box;
-    display: block;
-    line-height: 32px; 
-    z-index: auto;
+    flex: 1 0 25%; 
     flex-basis: 25%;
-    flex: 1 0 50%; 
-    max-width: 50%; 
-    height: 100px;
+    height: 200px;
 }
 
 .category-rectangle.mens {
@@ -251,29 +245,29 @@ a{
 }
 
 .category-square.trends {
-    background: url("images/trends-catergory.jpg") no-repeat;
+    background: url("images/trends-category.jpg") no-repeat 50%;
     background-size: cover;
 }
 
 .category-square.glasses {
-    background: url("images/glasses-catergory.jpg") no-repeat;
+    background: url("images/glasses-category.jpg") no-repeat 50%;
     background-size: cover;
 }
 
 .category-square.sale {
-    background: url("images/sale-catergory.jpg") no-repeat;
+    background: url("images/sale-category.jpg") no-repeat 50%;
     background-size: cover;
 
 }
 
 .category-square.bags {
-    background: url("images/bag-catergory.jpg") no-repeat;
+    background: url("images/bags-category.jpg") no-repeat 50%;
     background-size: cover;
 
 }
 
 .category-rectangle.womens {
-    background: url("images/womens-category.jpg") no-repeat;
+    background: url("images/womens-category.jpg") no-repeat 50%;
     background-size: cover;
 
 }
