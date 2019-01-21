@@ -26,7 +26,7 @@ $(function() {
     contain: true,
     percentPosition: false,
     imagedLoaded: true,
-    // autoPlay: true,
+    autoPlay: true,
     speed: 400,
     prevNextButtons: false
   });
