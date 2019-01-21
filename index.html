@@ -1,158 +1,265 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content width="device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content width="device-width, initial-scale=1" />
     <title>Aloha Apparel Co.</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="flickity.min.css" />
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
     <header class="site-header container">
-        <div class="logo">
-            <!--<h1 class="screen-reader"> Aloha Apparel Co.</h1>-->
-            <img src="images/aloha-logo.svg" width="160" height="auto" alt="Aloha Apparel Co. logo" />
-        </div>
+      <div class="logo">
+        <!--<h1 class="screen-reader"> Aloha Apparel Co.</h1>-->
+        <img
+          src="images/aloha-logo.svg"
+          width="160"
+          height="auto"
+          alt="Aloha Apparel Co. logo"
+        />
+      </div>
 
-        <div class="cart">
-            <!--<span class="screen-reader">Shopping Cart</span>-->
-            <img src="images/cart-icon.svg" class="" width="50px" height="auto" alt="Shopping Cart" />
-        </div>
+      <div class="cart">
+        <!--<span class="screen-reader">Shopping Cart</span>-->
+        <img
+          src="images/cart-icon.svg"
+          class=""
+          width="50px"
+          height="auto"
+          alt="Shopping Cart"
+        />
+        <i class="circle"><span class="cart-items"> 0</span></i>
+      </div>
 
-        <nav class="main-navigation">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Shop</a></li>
-                <li><a href="#featured">Featured</a></li>
-                <li><a href="#newsletter">Updates</a></li>
-                <!--CHANGE THE HREF TO UPDATES?-->
-            </ul>
-        </nav>
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#newsletter">Updates</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="banner">
-        <div class="banner-text container">
-            <p class="collection">New Collection</p>
-            <br>
-            <p class="season">Spring/Summer 2019</p>
-        </div>
+      <div class="banner-text container">
+        <p class="collection">New Collection</p>
+        <br />
+        <p class="season">Spring/Summer 2019</p>
+      </div>
     </section>
 
-    <section class="about container" id="about container">
-        <!--why do i have id here?-->
-        <h2><em>Hand-Crafted</em> <strong>Styles</strong></h2>
-        <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products
-            or sign-up for updates below.</p>
+    <section class="about container" id="about">
+      <h2><em>Hand-Crafted</em> <strong>Styles</strong></h2>
+      <p>
+        Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse
+        our current selection of products or sign-up for updates below.
+      </p>
     </section>
 
-    <section class="products container" id="products container">
-        <!--is this section written out correctly?-->
-        <div class="product-categories">
-            <div class="category-rectangle mens">
-                <!--category wide-->
-                <span class="category-name"><a href="mens">MEN'S</a></span>
-            </div>
-
-            <div class="category-square trends">
-                <!--category square-->
-
-                <span class="category-name"><a href="trends">TRENDS</a></span>
-            </div>
-
-            <div class="category-square glasses">
-                <!--category square-->
-                <span class="category-name"><a href="glasses">GLASSES</a></span>
-            </div>
-
-            <div class="category-square sale">
-                <!--category square-->
-                <span class="category-name"><a href="sale">SALE</a></span>
-            </div>
-
-            <div class="category-square bags">
-                <!--category square-->
-                <span class="category-name"><a href="bags">BAGS</a></span>
-            </div>
-
-            <div class="category-rectangle womens">
-                <!--category wide-->
-                <span class="category-name"><a href="womens">WOMEN'S</a></span>
-            </div>
+    <section class="products" id="products">
+      <div class="product-categories">
+        <div class="category-rectangle mens">
+          <!--category wide-->
+          <span class="category-name"><a href="mens">Men's</a></span>
         </div>
+
+        <div class="category-square trends">
+          <!--category square-->
+          <span class="category-name"><a href="trends">Trends</a></span>
+        </div>
+
+        <div class="category-square glasses">
+          <!--category square-->
+          <span class="category-name"><a href="glasses">Glasses</a></span>
+        </div>
+
+        <div class="category-square sale">
+          <!--category square-->
+          <span class="category-name"><a href="sale">Sale</a></span>
+        </div>
+
+        <div class="category-square bags">
+          <!--category square-->
+          <span class="category-name"><a href="bags">Bags</a></span>
+        </div>
+
+        <div class="category-rectangle womens">
+          <!--category wide-->
+          <span class="category-name"><a href="womens">Womens</a></span>
+        </div>
+      </div>
     </section>
 
     <section class="featured" id="featured">
-        <h2><em>Most-Loved</em> <strong>Products</strong></h2>
-        <div class="featured">
-            <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
-            <p>Dresses</p>
-            <h3>Checked Stretch Dress</h3>
-            <p>$129.00</p>
+      <h2><em>Most-Loved</em> <strong>Products</strong></h2>
+      <div class="main-carousel">
+        <div class="carousel-cell">
+          <img src="images/stretch-knit-dress.jpg" alt="stretch-knit-dress" />
+          <p>Dresses</p>
+          <h3>Stretch Knit Dress</h3>
+          <p>$169.00</p>
+          <button type="button" class="add-to-cart">Add to Cart</button>
         </div>
 
-        <div class="featured">
-            <img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
-            <p>Bags</p>
-            <h3>Blue Hipster Backpack</h3>
-            <p>$69.00</p>
+        <div class="carousel-cell">
+          <img src="images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt" />
+          <p>Shirts</p>
+          <h3>Cotton Blue Shirt</h3>
+          <p>$89.00</p>
+          <button type="button" class="add-to-cart">Add to Cart</button>
         </div>
 
-        <div class="featured">
-            <img src="images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
-            <p>Denim</p>
-            <h3>Demin Overall Shorts</h3>
-            <p>$89.00</p>
+        <div class="carousel-cell">
+          <img
+            src="images/checked-stretch-dress.jpg"
+            alt="checked-stretch-dress"
+          />
+          <p>Dresses</p>
+          <h3>Checkde Stretch Dress</h3>
+          <p>$129.00</p>
+          <button type="button" class="add-to-cart">Add to Cart</button>
         </div>
 
-        <div class="featured">
-            <img src="images/pink-dotted-dress.jpg" alt="pink-dotted-dress">
-            <p>Dresses</p>
-            <h3>Pink Dotted Dress</h3>
-            <p>$99.00</p>
+        <div class="carousel-cell">
+          <img
+            src="images/blue-hipster-backpack.jpg"
+            alt="blue-hipster-backpack"
+          />
+          <p>Bags</p>
+          <h3>Blue Hipster Backpack</h3>
+          <p>$69.00</p>
+          <button type="button" class="add-to-cart">Add to Cart</button>
         </div>
+
+        <div class="carousel-cell">
+          <img
+            src="images/demin-overall-shorts.jpg"
+            alt="demin-overall-shorts"
+          />
+          <p>Denim</p>
+          <h3>Demin Overall Shorts</h3>
+          <p>$89.00</p>
+          <button type="button" class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="carousel-cell">
+          <img src="images/pink-dotted-dress.jpg" alt="pink-dotted-dress" />
+          <p>Dresses</p>
+          <h3>Pink Dotted Dress</h3>
+          <p>$99.00</p>
+          <button type="button" class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="carousel-cell">
+          <img src="images/blue-silk-dress.jpg" alt="blue-silk-dress" />
+          <p>Dresses</p>
+          <h3>Blue Silk Dress</h3>
+          <p>$119.00</p>
+          <button type="button" class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="carousel-cell">
+          <img
+            src="images/cotton-yellow-tshirt.jpg"
+            alt="cotton-yellow-tshirt"
+          />
+          <p>Shirts</p>
+          <h3>Cotton Yellow Tshirts</h3>
+          <p>$39.00</p>
+          <button type="button" class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
     </section>
 
     <section class="newsletter" id="newsletter">
-        <!--may change to updates-->
-        <div class="sign-up-wrapper container">
-            <h2><em>Sign-Up for</em> <strong>Updates</strong></h2>
-            <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free
-                style
-                tips from our blog. Unsubscribe at any time.</p>
-            <form class="sign-up-form">
-                <label>
-                    <input type="email" placeholder="Your Email" />
-                </label>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
+      <div class="sign-up-wrapper container">
+        <h2><em>Sign-Up for</em> <strong>Updates</strong></h2>
+        <p>
+          Stay updated on our latest product releases, be first to find out
+          about upcoming sales, and get free style tips from our blog.
+          Unsubscribe at any time.
+        </p>
+        <form class="sign-up-form" id="sign-up-form">
+          <label>
+            <input
+              type="email"
+              name="your-email"
+              placeholder="Your Email"
+              id="your-email"
+            />
+          </label>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
     </section>
 
-
     <footer class="site-footer container">
-        <!--is this section written out correctly?-->
-        <div>
-            <h4>&copy; 2019 Aloha Apparel Co.
-                <br>
-                Powered by HTML and CSS.</h4>
-            <h4>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></h4>
-            <h4>1490 W Broadway
-                <br>
-                Vancouver, BC, Canada</h4>
+      <div class="contact-wrapper">
+        <div class="copyright">
+          <p>&copy; 2019 Aloha Apparel Co.</p>
+          <p>Powered by HTML and CSS.</p>
         </div>
 
-        <ul>
-            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-            <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
-            <li><a href="#"><i class="fab fa-google-plus-g"></i> Google+</a></li>
-        </ul>
-    </footer>
-</body>
+        <div class="contact">
+          <p>
+            604-604-6040.
+            <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a>
+          </p>
+        </div>
 
+        <div class="address">
+          <p>1490 W Broadway</p>
+          <p>Vancouver, BC, Canada</p>
+        </div>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="#"
+            ><i class="fab fa-facebook-f"></i
+            ><span class="network-name">Facebook</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fab fa-twitter"></i
+            ><span class="network-name">Twitter</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fab fa-instagram"></i
+            ><span class="network-name">Instagram</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fab fa-pinterest"></i
+            ><span class="network-name">Pinterest</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fab fa-google-plus-g"></i
+            ><span class="network-name">Google+</span></a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+
+  <script type="text/javascript" src="./jquery.js"></script>
+  <script type="text/javascript" src="./flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
 </html>
