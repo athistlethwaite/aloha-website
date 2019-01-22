@@ -105,7 +105,7 @@ h3 {
   font-family: "Playfair Display Regular";
   text-align: center;
   color: #e2574c;
-  font-size: 18px;
+  font-size: 25px;
 }
 h4 {
   margin-bottom: 1rem;
@@ -254,6 +254,8 @@ a {
 }
 .carousel-cell p {
   font-family: "Railway Medium";
+  font-style: bold;
+  font-size: 12px;
 }
 .category-name a {
   color: white;
@@ -318,7 +320,7 @@ a {
   padding-top: 1rem;
 }
 .add-to-cart {
-  background-color: black;
+  background-color:#242424;
   border: 0;
   border-radius: 1000px;
   font-family: "Raleway Medium";
@@ -353,6 +355,7 @@ background-color:#e2574c;
   text-transform: uppercase; 
   color: #969696;
   font-family: "Raleway Light";
+  font-weight: 700;
 }
 
 /*----------NEWSLETTER----------*/
@@ -366,6 +369,9 @@ background-color:#e2574c;
   margin-bottom: 8px;
   margin-top: 60px;
   text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+}
+.about{
+  max-width: 720px;
 }
 input[type="email"], input[type="submit"] {
   border: 0;
@@ -410,6 +416,11 @@ input[type="email"] {
   right: 3px;
   top: 2px; 
   font-family: "Raleway Medium"; 
+  cursor: pointer;
+}
+
+.newsletter button:hover{
+    background-color:#a73830;
 }
 
 /*----------FOOTER----------*/
@@ -428,7 +439,7 @@ footer li {
 }
 .site-footer {
   background-color: #242424;
-  font-family: 'Playfair Display Regular';
+  font-family: "Playfair Display Regular";
   color: white;
   padding: 4rem 0;
   text-align: center;
@@ -436,6 +447,9 @@ footer li {
 .contact,
 .copyright {
   margin-bottom: 1rem;
+}
+.contact-wrapper p {
+  font-family: "Playfair Display Regular";
 }
 .address {
   color: #969696;
@@ -474,6 +488,7 @@ footer li {
     flex-basis: 60%; 
     order: 2;
     border: none;
+    text-align: space-between;
   }
   .category-rectangle {
     position: relative;
@@ -491,6 +506,7 @@ footer li {
     display: inline-block;
     font-size: 1rem;
     margin: 0.5rem;
+    font-size: .9rem;
   }
   .site-footer {
     display: flex;
@@ -501,6 +517,7 @@ footer li {
   .contact-wrapper p{
     text-align: left;
     padding-left: 1rem;
+    font-family: "Playfair Display Regular";
   }
   .network-name {
       display: inline
@@ -518,7 +535,7 @@ footer li {
   }
   .sign-up-wrapper {
     text-align: center;
-    width: 720px;
+    max-width: 720px;
   }
   input[type="email"] {
     font-size: 14px;
@@ -535,7 +552,6 @@ footer li {
   .logo {
     padding-left: 5%;
   }
-  
   .cart {
     padding-right: 5%; 
   }
