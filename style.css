@@ -16,7 +16,16 @@
   top: 5px;
   width: auto;
   z-index: 100000;
+  background-color: #e2574c;
+  color: white;
+  font-style: bold;
   /* above all content */
+}
+
+/* ----------MAIN---------- */
+
+#main[tabindex="-1"]:focus {
+  outline: 0;
 }
 
 /*----------LAYOUT----------*/
