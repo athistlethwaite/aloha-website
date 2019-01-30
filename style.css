@@ -141,11 +141,11 @@ h2 {
   text-align: center;
   font-size: 40px;
 }
-
+/* contract problems with this color*/
 h3 {
-  font-family: "Playfair Display Regular";
+  font-family: "Playfair Display Regular"; 
   text-align: center;
-  color: #e2574c;
+  color: #6d0d06;
   font-size: 25px;
 }
 
