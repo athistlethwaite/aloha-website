@@ -29,9 +29,9 @@ $(function () {
     speed: 400,
     prevNextButtons: false
   });
-});
 
-$(function () {
+
+
   $(".sign-up-form button").click(function (event) {
     event.preventDefault();
     if ($("#your-email").val() == "") {
@@ -40,9 +40,9 @@ $(function () {
       alert("Thank you for subscribing!");
     }
   });
-});
 
-$(function () {
+
+
   let cartItems = 0;
   $(".featured").on("click", "button", function (event) {
     event.preventDefault();
@@ -50,5 +50,7 @@ $(function () {
     $(".cart-items")
       .text(cartItems)
       .show();
+
   });
+
 });
