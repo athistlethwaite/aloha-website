@@ -1,17 +1,16 @@
-$(function() {
+$(function () {
   // Smooth Scrolling Source: https://css-tricks.com/smooth-scrolling-accessibility/
 
-  $('.main-navigation a[href*="#"]:not([href="#"])').click(function() {
+  $('.main-navigation a[href*="#"]:not([href="#"])').click(function () {
     if (
       location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
+      this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
-      var target = $(this.hash);
+      let target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
       if (target.length) {
-        $("html, body").animate(
-          {
+        $("html, body").animate({
             scrollTop: target.offset().top
           },
           1000
@@ -32,8 +31,8 @@ $(function() {
   });
 });
 
-$(function() {
-  $(".sign-up-form button").click(function(event) {
+$(function () {
+  $(".sign-up-form button").click(function (event) {
     event.preventDefault();
     if ($("#your-email").val() == "") {
       alert("Please enter a valid e-mail address.");
@@ -43,9 +42,9 @@ $(function() {
   });
 });
 
-$(function() {
-  var cartItems = 0;
-  $(".featured").on("click", "button", function(event) {
+$(function () {
+  let cartItems = 0;
+  $(".featured").on("click", "button", function (event) {
     event.preventDefault();
     cartItems++;
     $(".cart-items")
